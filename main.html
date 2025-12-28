@@ -1,88 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>HTML Assignment #3</title>
+    <meta charset="UTF-8">
+    <title>HTML Assignment 3</title>
+
+    <style>
+        table {
+            border: 1px solid black;
+            border-spacing: 1px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 1px;
+        }
+
+        .middle {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+    </style>
 </head>
+
 <body>
 
-    <!-- ===================== -->
-    <!-- 1. SIMPLE TABLE -->
-    <!-- ===================== -->
-    <h3 align="center">HTML Assignment #3</h3>
+    <!-- REQUIRED HEADING -->
+    <h1 style="text-align:center;">HTML Assignment #3</h1>
 
-    <table border="1" width="100%" cellspacing="0" cellpadding="5">
+    <!-- ================= TABLE 1 ================= -->
+    <table id="table-1" class="middle">
         <tr>
-            <td align="left">left</td>
-            <td align="center">center</td>
-            <td align="right">right</td>
+            <td id="t1">left</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
+        </tr>
+        <tr class="center">
+            <td id="t2">left</td>
+            <td>center</td>
+            <td class="right">right</td>
         </tr>
         <tr>
-            <td align="left">left</td>
-            <td align="center">center</td>
-            <td align="right">right</td>
-        </tr>
-        <tr>
-            <td align="left">left</td>
-            <td align="center">center</td>
-            <td align="right">right</td>
-        </tr>
-    </table>
-
-    <br><br>
-
-    <!-- ===================== -->
-    <!-- 2. COMPLEX NESTED TABLE -->
-    <!-- ===================== -->
-    <table border="1" width="100%" cellspacing="0" cellpadding="10">
-        <tr>
-            <td width="20%">
-                <table border="1" width="100%">
-                    <tr><td>&nbsp;</td></tr>
-                    <tr><td>&nbsp;</td></tr>
-                    <tr><td>&nbsp;</td></tr>
-                </table>
-            </td>
-
-            <td width="60%">
-                <table border="1" width="100%">
-                    <tr>
-                        <td width="50%">&nbsp;</td>
-                        <td width="50%">&nbsp;</td>
-                    </tr>
-                </table>
-            </td>
-
-            <td width="20%">
-                <table border="1" width="100%">
-                    <tr><td>&nbsp;</td></tr>
-                    <tr><td>&nbsp;</td></tr>
-                    <tr><td>&nbsp;</td></tr>
-                </table>
-            </td>
+            <td id="t3">left</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
         </tr>
     </table>
 
     <br><br>
 
-    <!-- ===================== -->
-    <!-- 3. IMAGE LAYOUT -->
-    <!-- ===================== -->
-    <table border="1" width="100%" cellspacing="0" cellpadding="0">
-        <!-- Top green bar -->
+    <!-- ================= TABLE 2 ================= -->
+    <table id="table-2" class="middle">
         <tr>
-            <td bgcolor="green" height="25"></td>
+            <td id="t21" colspan="6"></td>
         </tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    </table>
 
-        <!-- Image row -->
+    <br><br>
+
+    <!-- ================= TABLE 3 ================= -->
+    <table id="table-3" class="middle">
+        <tr class="green">
+            <td colspan="3"></td>
+        </tr>
         <tr>
-            <td align="center">
-                <img src="https://picsum.photos/300/200" alt="Image">
+            <td></td>
+            <td id="t-image" class="center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Michael_Jordan_in_2014.jpg"
+                     width="200" alt="Image">
             </td>
+            <td></td>
         </tr>
-
-        <!-- Bottom blue bar -->
-        <tr>
-            <td bgcolor="blue" height="25"></td>
+        <tr class="blue">
+            <td colspan="3"></td>
         </tr>
     </table>
 
